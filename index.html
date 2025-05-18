@@ -8,179 +8,213 @@
   <link rel="icon" href="/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html { scroll-behavior: smooth; }
+    :root {
+      --color-primary: #A3D9B1;
+      --color-secondary: #B5EAEA;
+      --color-accent: #FFE5A5;
+      --color-text: #333333;
+      --color-bg: #F7F9FA;
+    }
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      scroll-behavior: smooth;
+    }
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background-color: var(--color-secondary);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    }
+    .bonus-gradient {
+      background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+    }
+    hr.divider {
+      border-color: #D1D5DB;
+    }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+<body class="font-sans leading-relaxed">
 
-  <!-- Navigation -->
+  <!-- Nav -->
   <nav class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#top" class="text-xl font-bold text-green-600 hover:text-green-700">PF2025</a>
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#top" class="text-xl font-bold" style="color: var(--color-primary)">PF2025</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="#sobre" class="hover:text-green-600">Sobre</a></li>
-        <li><a href="#o-que-encontrar" class="hover:text-green-600">O que inclui</a></li>
-        <li><a href="#bonus" class="hover:text-green-600">Bônus</a></li>
-        <li><a href="#faq" class="hover:text-green-600">FAQ</a></li>
+        <li><a href="#sobre" class="hover:text-[var(--color-primary)]">Sobre</a></li>
+        <li><a href="#o-que-encontrar" class="hover:text-[var(--color-primary)]">O que inclui</a></li>
+        <li><a href="#bonus" class="hover:text-[var(--color-primary)]">Bônus</a></li>
+        <li><a href="#faq" class="hover:text-[var(--color-primary)]">FAQ</a></li>
       </ul>
-      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-lg">Garantir sua vaga</a>
-      <button class="md:hidden focus:outline-none" aria-label="Abrir menu">
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="hidden md:inline-block btn-primary font-semibold px-6 py-2 rounded-lg">Garanta sua vaga</a>
+      <button class="md:hidden focus:outline-none" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="top" class="bg-gradient-to-r from-green-500 to-green-600 text-white py-20">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+  <!-- Hero -->
+  <header id="top" class="hero-gradient text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
       <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Concurso PF 2025: Planeje sua Aprovação</h1>
-      <p class="text-lg md:text-xl mb-6">Cronograma estratégico de 8 semanas, análise detalhada do edital e orientações discursivas para garantir sua vaga.</p>
-      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="inline-block bg-white text-green-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl">Quero garantir minha vaga</a>
+      <p class="text-lg md:text-xl mb-6">Cronograma estratégico de 8 semanas, análise do edital e orientações discursivas.</p>
+      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="inline-block btn-primary font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl">
+        🔘 Quero minha planilha
+      </a>
     </div>
   </header>
 
-  <!-- Sobre a Planilha -->
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- Sobre -->
   <section id="sobre" class="py-12 bg-white">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Sobre a Planilha</h2>
-      <div class="text-center max-w-3xl mx-auto">
-        <p class="text-lg mb-6 text-gray-700">
-          Ferramenta estratégica feita especialmente para o concurso da Polícia Federal 2025.
-          Foco, disciplina e metas reais para te levar até a aprovação.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-          <div class="bg-blue-50 p-6 rounded-lg shadow-md">
-            <p class="text-lg font-semibold text-gray-800">✅ Cronograma completo de 8 semanas</p>
-          </div>
-          <div class="bg-blue-50 p-6 rounded-lg shadow-md">
-            <p class="text-lg font-semibold text-gray-800">✅ Análise aprofundada do edital CESPE</p>
-          </div>
-          <div class="bg-blue-50 p-6 rounded-lg shadow-md">
-            <p class="text-lg font-semibold text-gray-800">✅ Orientações práticas para discursiva</p>
-          </div>
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <h2 class="text-3xl font-bold mb-8" style="color: var(--color-primary)">Sobre a Planilha</h2>
+      <p class="text-lg mb-6">Ferramenta estratégica feita especialmente para o concurso da Polícia Federal 2025. Foco, disciplina e metas reais para levar você à aprovação.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div class="p-6 rounded-lg shadow-md bg-[var(--color-secondary)]/20">
+          <p class="font-semibold">✅ Cronograma de 8 semanas</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md bg-[var(--color-secondary)]/20">
+          <p class="font-semibold">✅ Análise do edital CESPE</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md bg-[var(--color-secondary)]/20">
+          <p class="font-semibold">✅ Dicas para discursiva</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
-  <section id="o-que-encontrar" class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O que você vai encontrar</h2>
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- O que encontra -->
+  <section id="o-que-encontrar" class="py-12">
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <h2 class="text-3xl font-bold mb-12" style="color: var(--color-primary)">O que você vai encontrar</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="p-8 rounded-xl shadow-lg bg-white">
           <div class="text-4xl mb-4">📅</div>
-          <h3 class="text-xl font-bold mb-3 text-gray-800">Cronograma de 8 semanas</h3>
-          <p class="text-gray-600">Metas equilibradas para otimizar seu tempo.</p>
+          <h3 class="font-bold mb-2">Cronograma</h3>
+          <p>Metas equilibradas para otimizar seu tempo.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="p-8 rounded-xl shadow-lg bg-white">
           <div class="text-4xl mb-4">🔎</div>
-          <h3 class="text-xl font-bold mb-3 text-gray-800">Raio-X do edital</h3>
-          <p class="text-gray-600">Análise dos temas mais cobrados pela banca.</p>
+          <h3 class="font-bold mb-2">Raio-X do edital</h3>
+          <p>Análise dos temas mais cobrados.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="p-8 rounded-xl shadow-lg bg-white">
           <div class="text-4xl mb-4">✍️</div>
-          <h3 class="text-xl font-bold mb-3 text-gray-800">Discursiva</h3>
-          <p class="text-gray-600">Dicas práticas conforme CESPE.</p>
+          <h3 class="font-bold mb-2">Discursiva</h3>
+          <p>Dicas práticas no padrão CESPE.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Bonus Section -->
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
-  <section id="bonus" class="py-12 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-3xl font-bold text-center mb-12">Bônus Exclusivos</h2>
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- Bônus -->
+  <section id="bonus" class="py-12 bonus-gradient text-white">
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <h2 class="text-3xl font-bold mb-12">Bônus Exclusivos</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+        <div class="p-8 rounded-xl shadow-lg bg-white/30 backdrop-blur-sm">
           <div class="text-4xl mb-4">🎯</div>
-          <h3 class="text-xl font-bold mb-3">Robô Coach de Estudos</h3>
-          <p class="text-white/80">Mantém sua rotina firme.</p>
+          <h3 class="font-bold mb-2">Robô Coach</h3>
+          <p>Mantém sua rotina firme.</p>
         </div>
-        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+        <div class="p-8 rounded-xl shadow-lg bg-white/30 backdrop-blur-sm">
           <div class="text-4xl mb-4">📝</div>
-          <h3 class="text-xl font-bold mb-3">Robô Corretor de Discursiva</h3>
-          <p class="text-white/80">Critérios CESPE integrados.</p>
+          <h3 class="font-bold mb-2">Corretor de Discursiva</h3>
+          <p>Critérios CESPE integrados.</p>
         </div>
-        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
+        <div class="p-8 rounded-xl shadow-lg bg-white/30 backdrop-blur-sm">
           <div class="text-4xl mb-4">📘</div>
-          <h3 class="text-xl font-bold mb-3">Modelo de Caderno de Erros</h3>
-          <p class="text-white/80">Transforme erros em aprendizado.</p>
+          <h3 class="font-bold mb-2">Caderno de Erros</h3>
+          <p>Transforme erros em aprendizado.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- Depoimentos -->
   <section id="depoimentos" class="py-12 bg-white">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Depoimentos</h2>
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <h2 class="text-3xl font-bold mb-12" style="color: var(--color-primary)">Depoimentos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="p-6 rounded-lg shadow-md">
-          <p class="text-gray-700 italic mb-4">
-            “Com essa planilha, finalmente consegui me organizar e sentir que estou estudando da forma certa.”
-          </p>
-          <p class="font-semibold text-gray-900">— Maria S.</p>
+        <div class="p-6 rounded-lg shadow-md bg-[var(--color-accent)]/30">
+          <p class="italic mb-4">“Com essa planilha, finalmente consegui me organizar e estudar de forma eficiente.”</p>
+          <p class="font-semibold">— Maria S.</p>
         </div>
-        <div class="p-6 rounded-lg shadow-md">
-          <p class="text-gray-700 italic mb-4">
-            “As dicas da discursiva são de ouro! Nunca estudei redação de um jeito tão direcionado.”
-          </p>
-          <p class="font-semibold text-gray-900">— Carlos M.</p>
+        <div class="p-6 rounded-lg shadow-md bg-[var(--color-accent)]/30">
+          <p class="italic mb-4">“As dicas de discursiva são de ouro! Nunca estudei redação tão direcionado.”</p>
+          <p class="font-semibold">— Carlos M.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
-  <section id="faq" class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Perguntas Frequentes</h2>
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-12">
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <h2 class="text-3xl font-bold mb-12" style="color: var(--color-primary)">Perguntas Frequentes</h2>
       <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="p-6 border-b border-gray-200">
-          <h3 class="text-xl font-semibold mb-2 text-gray-800">Preciso saber Excel?</h3>
-          <p class="text-gray-700">Não! A planilha é simples e vem com instruções passo a passo.</p>
+        <div class="p-6 border-b">
+          <h3 class="font-semibold mb-2">Preciso saber Excel?</h3>
+          <p>Não! A planilha é simples e já vem com instruções passo a passo.</p>
         </div>
-        <div class="p-6 border-b border-gray-200">
-          <h3 class="text-xl font-semibold mb-2 text-gray-800">Serve para outros concursos?</h3>
-          <p class="text-gray-700">Feita sob medida para Agente Administrativo da PF 2025.</p>
+        <div class="p-6 border-b">
+          <h3 class="font-semibold mb-2">Serve para outros concursos?</h3>
+          <p>Feita sob medida para Agente Administrativo da PF 2025.</p>
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 text-gray-800">Tem garantia?</h3>
-          <p class="text-gray-700">Sim! Teste por 7 dias e, se não gostar, devolvemos seu dinheiro.</p>
+          <h3 class="font-semibold mb-2">Tem garantia?</h3>
+          <p>Sim! Teste por 7 dias e, se não gostar, devolvemos seu dinheiro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action & Footer -->
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
-  <section id="cta" class="py-16 bg-gradient-to-r from-green-600 to-green-700 text-white text-center">
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- CTA -->
+  <section id="cta" class="py-16 hero-gradient text-white text-center">
     <div class="container mx-auto px-4 max-w-6xl">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">🎯 A hora da sua aprovação é agora</h2>
       <p class="text-xl mb-8">100 vagas aguardam candidatos preparados. Garanta sua planilha hoje!</p>
-      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="inline-block bg-white text-green-600 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl">
-        🔘 Garantir minha vaga
+      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="inline-block btn-primary font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl">
+        🔘 Garanta sua vaga
       </a>
     </div>
   </section>
-  <div class="container mx-auto px-4 max-w-6xl"><hr class="border-t border-gray-300 my-8"></div>
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row justify-between items-center">
+
+  <!-- Divider -->
+  <div class="container mx-auto px-4 max-w-6xl"><hr class="divider my-8"></div>
+
+  <!-- Footer -->
+  <footer class="bg-white py-8">
+    <div class="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row justify-between items-center text-gray-700">
       <p class="mb-4 md:mb-0">💳 Pagamento via Pix | 🔒 Transação segura | Garantia de 7 dias</p>
+      <p>📞 Suporte WhatsApp: (61) 9XXXX-XXXX</p>
     </div>
   </footer>
 
 </body>
 </html>
 
-  </footer>
-</body>
-</html>
