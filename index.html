@@ -1,319 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planilha de Estudos - Concurso PF 2025</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f0f4f8;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
-        }
-        .btn-primary {
-            background: linear-gradient(90deg, #e53e3e 0%, #c53030 100%);
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        .feature-card {
-            transition: all 0.3s ease;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        .testimonial {
-            position: relative;
-        }
-        .testimonial::before {
-            content: '"';
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            font-size: 4rem;
-            color: rgba(226, 232, 240, 0.5);
-            font-family: serif;
-        }
-        .countdown-item {
-            background: linear-gradient(135deg, #2a4365 0%, #1a365d 100%);
-        }
-        .price-tag {
-            position: relative;
-            display: inline-block;
-        }
-        .price-tag::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            height: 3px;
-            background-color: #e53e3e;
-            transform: rotate(-10deg);
-        }
-        .author-section {
-            background: linear-gradient(135deg, #f6f0ff 0%, #e6f7ff 100%);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planilha estratégica para concurso PF 2025: cronograma de 8 semanas, análise do edital CESPE e bônus exclusivos para garantir sua aprovação.">
+  <title>Planilha Estratégica PF 2025</title>
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body>
-    <!-- Hero Section -->
-    <header class="hero-gradient text-white">
-        <div class="container mx-auto px-4 py-16 md:py-24">
-            <div class="max-w-5xl mx-auto text-center">
-                <span class="inline-block bg-red-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">CONCURSO PF 2025</span>
-                <h1 class="text-3xl md:text-5xl font-bold mb-6">Prepare-se para o Concurso de Agente Administrativo da Polícia Federal!</h1>
-                
-                <div class="flex flex-wrap justify-center gap-6 mb-8">
-                    <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-                        </svg>
-                        <span class="text-xl">100 vagas abertas</span>
-                    </div>
-                    <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span class="text-xl">Salário inicial superior a R$ 7.000!</span>
-                    </div>
-                    <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
-                        <span class="text-xl">Cronograma inteligente de 8 semanas!</span>
-                    </div>
-                </div>
-                
-                <div class="mb-12">
-                    <a href="https://pay.cakto.com.br/f3v3ihi_371660"
-                       target="_blank" rel="noopener noreferrer"
-                       class="btn-primary inline-block text-xl font-bold py-4 px-8 rounded-lg shadow-lg">
-                        🔘 Garantir minha vaga agora!
-                    </a>
-                </div>
-                
-                <!-- Countdown Timer -->
-                <div class="max-w-3xl mx-auto">
-                    <h3 class="text-xl mb-4">Oferta por tempo limitado:</h3>
-                    <div class="flex justify-center gap-4">
-                        <div class="countdown-item w-20 h-20 rounded-lg flex flex-col items-center justify-center">
-                            <span id="days" class="text-2xl font-bold">00</span>
-                            <span class="text-xs">Dias</span>
-                        </div>
-                        <div class="countdown-item w-20 h-20 rounded-lg flex flex-col items-center justify-center">
-                            <span id="hours" class="text-2xl font-bold">00</span>
-                            <span class="text-xs">Horas</span>
-                        </div>
-                        <div class="countdown-item w-20 h-20 rounded-lg flex flex-col items-center justify-center">
-                            <span id="minutes" class="text-2xl font-bold">00</span>
-                            <span class="text-xs">Minutos</span>
-                        </div>
-                        <div class="countdown-item w-20 h-20 rounded-lg flex flex-col items-center justify-center">
-                            <span id="seconds" class="text-2xl font-bold">00</span>
-                            <span class="text-xs">Segundos</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <!-- Navigation -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#top" class="text-xl font-bold text-green-600 hover:text-green-700">PF2025</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#sobre" class="hover:text-green-600">Sobre</a></li>
+        <li><a href="#conteudo" class="hover:text-green-600">O que inclui</a></li>
+        <li><a href="#bonus" class="hover:text-green-600">Bônus</a></li>
+        <li><a href="#faq" class="hover:text-green-600">FAQ</a></li>
+      </ul>
+      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-lg transition">Garanta sua vaga</a>
+      <button class="md:hidden focus:outline-none" aria-label="Abrir menu">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Author Section -->
-    <section class="author-section py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Quem montou essa planilha?</h2>
-                
-                <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-xl shadow-md">
-                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-                        <div class="w-48 h-48 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden border-4 border-blue-300">
-                            <span class="text-6xl">👩‍💼</span>
-                        </div>
-                    </div>
-                    
-                    <div class="md:w-2/3 md:pl-8">
-                        <p class="text-lg text-gray-700 mb-6">
-                            <span class="font-bold">Prazer! Sou a Dayane</span>, dona do insta <span class="text-blue-600 font-semibold">@concurseirapcd</span>, atualmente sou <span class="font-semibold">Analista do TRF1</span> e já fui aprovada em diversos concursos públicos — sempre entre os <span class="font-semibold">10 primeiros colocados</span>.
-                        </p>
-                        
-                        <p class="text-gray-700 mb-6">
-                            Com base na minha trajetória e na experiência prática com concursos exigentes, desenvolvi esta planilha personalizada para te ajudar a estudar com mais organização, clareza e estratégia real.
-                        </p>
-                        
-                        <p class="text-gray-700 mb-4">
-                            O objetivo aqui é facilitar sua jornada rumo à aprovação, com:
-                        </p>
-                        
-                        <ul class="mb-6 space-y-2">
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 mr-3 mt-1">
-                                    <span class="inline-block w-5 h-5 bg-blue-600 text-white rounded-full text-xs flex items-center justify-center font-bold">1</span>
-                                </div>
-                                <p class="text-gray-700">Ciclos de estudo bem estruturados</p>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 mr-3 mt-1">
-                                    <span class="inline-block w-5 h-5 bg-blue-600 text-white rounded-full text-xs flex items-center justify-center font-bold">2</span>
-                                </div>
-                                <p class="text-gray-700">Foco em revisão e constância</p>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 mr-3 mt-1">
-                                    <span class="inline-block w-5 h-5 bg-blue-600 text-white rounded-full text-xs flex items-center justify-center font-bold">3</span>
-                                </div>
-                                <p class="text-gray-700">Métodos de aprendizado ativo</p>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 mr-3 mt-1">
-                                    <span class="inline-block w-5 h-5 bg-blue-600 text-white rounded-full text-xs flex items-center justify-center font-bold">4</span>
-                                </div>
-                                <p class="text-gray-700">Dicas práticas para a discursiva</p>
-                            </li>
-                        </ul>
-                        
-                        <p class="text-gray-700 italic border-l-4 border-blue-500 pl-4 py-2 bg-blue-50">
-                            Essa planilha foi criada com carinho, pensando em quem não pode pagar muito, mas quer mudar de vida por meio dos estudos (COMO EU há alguns anos) e precisa de direção clara, metas possíveis e motivação constante. Vamos junto(a)s até a posse!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header id="top" class="bg-gradient-to-r from-green-500 to-green-600 text-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Concurso PF 2025: Planeje sua Aprovação</h1>
+      <p class="text-lg md:text-xl mb-6">Cronograma estratégico de 8 semanas, análise detalhada do edital e orientações discursivas para garantir sua vaga.</p>
+      <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="inline-block bg-white text-green-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition">Quero garantir minha vaga</a>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Sobre a Planilha</h2>
-                <div class="bg-blue-50 p-8 rounded-xl shadow-md">
-                    <p class="text-lg text-gray-700 mb-6">Ferramenta estratégica feita especialmente para o concurso da Polícia Federal 2025. Foco, disciplina e metas reais para te levar até a aprovação.</p>
-                    
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mr-3">
-                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-700">Cronograma pronto</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mr-3">
-                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-700">Análise do edital baseada na banca CESPE</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mr-3">
-                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <p class="text-gray-700">Orientações para a prova discursiva</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Sobre a Planilha -->
+  <section id="sobre" class="max-w-4xl mx-auto px-6 py-16 bg-white rounded-xl shadow-lg mt-10">
+    <h2 class="text-3xl text-green-600 font-bold mb-4">Sobre a Planilha</h2>
+    <p class="mb-6">Desenvolvida para candidatos ao concurso de Agente Administrativo da Polícia Federal, esta planilha oferece:</p>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <li class="flex items-start"><svg class="w-6 h-6 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Cronograma completo de 8 semanas</span></li>
+      <li class="flex items-start"><svg class="w-6 h-6 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Análise aprofundada do edital CESPE</span></li>
+      <li class="flex items-start"><svg class="w-6 h-6 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Orientações práticas para a prova discursiva</span></li>
+      <li class="flex items-start"><svg class="w-6 h-6 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Modelo de caderno de erros para monitorar seu progresso</span></li>
+    </ul>
+  </section>
 
-    <!-- Features, Bonus, Testimonials, FAQ (sem alterações) -->
+  <!-- O que você vai encontrar -->
+  <section id="conteudo" class="max-w-4xl mx-auto px-6 py-16 mt-10">
+    <h2 class="text-3xl text-green-600 font-bold mb-6">O que você vai encontrar</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">📅 Cronograma de 8 semanas</h3>
+        <p>Metas diárias e revisão semanal para manter o ritmo.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">🔎 Raio-X do edital</h3>
+        <p>Identificação dos tópicos mais cobrados pela banca CESPE.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="font-semibold text-lg mb-2">✍️ Discursiva orientada</h3>
+        <p>Dicas e modelos prontos para otimizar sua redação.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-16 bg-blue-900 text-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-8">A hora da sua aprovação é agora!</h2>
-                <p class="text-xl mb-12">100 vagas estão esperando candidatos preparados — seja um deles!</p>
-                
-                <div class="bg-white text-gray-800 rounded-2xl shadow-2xl overflow-hidden">
-                    <div class="bg-blue-800 text-white py-4">
-                        <h3 class="text-2xl font-bold">Planilha de Estudos PF 2025</h3>
-                        <p class="text-blue-100">Completa com todos os bônus</p>
-                    </div>
-                    
-                    <div class="p-8">
-                        <div class="flex justify-center items-center mb-8">
-                            <span class="price-tag text-gray-400 line-through text-2xl mr-4">R$ 49,90</span>
-                            <span class="text-4xl font-bold text-blue-900">R$ 9,90</span>
-                        </div>
-                        
-                        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-8">
-                            <p class="text-yellow-800 font-medium">PROMOÇÃO RELÂMPAGO! 80% de desconto por tempo limitado!</p>
-                        </div>
-                        
-                        <div class="mb-8">
-                            <p class="text-gray-600 mb-2">Pagamento único, sem mensalidades</p>
-                            <p class="text-gray-600">Acesso imediato após a compra</p>
-                        </div>
-                        
-                        <a href="https://pay.cakto.com.br/f3v3ihi_371660"
-                           target="_blank" rel="noopener noreferrer"
-                           class="btn-primary block text-xl font-bold py-4 px-8 rounded-lg shadow-lg text-center text-white mb-6">
-                            🔘 Garantir minha vaga agora!
-                        </a>
-                        
-                        <div class="flex justify-center items-center gap-4 text-sm text-gray-600">
-                            <!-- ícones de segurança e garantia -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Bônus Exclusivos -->
+  <section id="bonus" class="max-w-4xl mx-auto px-6 py-16 bg-white rounded-xl shadow-lg mt-10">
+    <h2 class="text-3xl text-green-600 font-bold mb-6">Bônus Exclusivos</h2>
+    <ul class="space-y-4">
+      <li>🤖 Robô Coach de Estudos para manter sua rotina</li>
+      <li>📝 Robô Corretor de Discursiva personalizado</li>
+      <li>📘 Checklist de revisão e caderno de erros</li>
+    </ul>
+  </section>
 
-    <!-- Footer (sem alterações) -->
+  <!-- Depoimentos -->
+  <section class="max-w-4xl mx-auto px-6 py-16 mt-10">
+    <h2 class="text-3xl text-green-600 font-bold mb-6">Depoimentos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <blockquote class="border-l-4 border-green-600 pl-4 italic bg-white p-6 rounded-xl shadow">
+        “Com essa planilha, finalmente consegui me organizar e sentir que estou estudando da forma certa.”
+        <footer class="mt-4 text-right font-semibold">— Maria S.</footer>
+      </blockquote>
+      <blockquote class="border-l-4 border-green-600 pl-4 italic bg-white p-6 rounded-xl shadow">
+        “As dicas da discursiva são de ouro! Nunca estudei redação de um jeito tão direcionado.”
+        <footer class="mt-4 text-right font-semibold">— Carlos M.</footer>
+      </blockquote>
+    </div>
+  </section>
 
-    <script>
-        // Countdown Timer
-        const countdownDate = new Date();
-        countdownDate.setDate(countdownDate.getDate() + 3); // 3 days from now
-        
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
-            
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-            
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("days").innerHTML = "00";
-                document.getElementById("hours").innerHTML = "00";
-                document.getElementById("minutes").innerHTML = "00";
-                document.getElementById("seconds").innerHTML = "00";
-            }
-        }
-        
-        updateCountdown();
-        const x = setInterval(updateCountdown, 1000);
-        
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+  <!-- Perguntas Frequentes -->
+  <section id="faq" class="max-w-4xl mx-auto px-6 py-16 bg-white rounded-xl shadow-lg mt-10">
+    <h2 class="text-3xl text-green-600 font-bold mb-6">Perguntas Frequentes</h2>
+    <dl class="space-y-6">
+      <div>
+        <dt class="font-semibold">Preciso saber Excel?</dt>
+        <dd>Não! A planilha é simples e já vem com instruções passo a passo.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Serve para outros concursos?</dt>
+        <dd>Foi feita sob medida para Agente Administrativo da PF 2025.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Tem garantia?</dt>
+        <dd>Sim! Teste por 7 dias e, se não gostar, devolvemos seu dinheiro.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-3xl text-green-600 font-bold mb-4">🎯 Pronto para mudar sua vida?</h2>
+    <p class="mb-8">As 100 vagas esperam candidatos preparados. Garanta sua planilha agora!</p>
+    <a href="https://pay.cakto.com.br/f3v3ihi_371660" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-10 py-4 rounded-full shadow-lg transition">Quero minha planilha</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-8 mt-16">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-2">
+      <p>💳 Pagamento via Pix | 🔒 Transação segura</p>
+      <p>📞 Suporte WhatsApp: (61) 9XXXX-XXXX</p>
+      <p>&copy; 2025 Planilha Estratégica PF</p>
+    </div>
+  </footer>
 </body>
 </html>
